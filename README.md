@@ -27,7 +27,27 @@
 
 ## 仓库统计
 
-> 尚未同步到符合条件的 PR。
+| 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
+| [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
+| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [WhatGhost/CINN](https://github.com/WhatGhost/CINN) | 3 | 0 | 2 | 1 | 0 | 0.0% | 0.0% |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 2 | 1 | 1 | 0 | 0 | 100.0% | 50.0% |
+| [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
+| [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
+| [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
+| [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
+| [thu-pacman/chitu](https://github.com/thu-pacman/chitu) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 
 ## PR 明细
 
