@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pr-record"
+version = "0.1.0"
+description = "Automatically collect and publish pull requests authored on GitHub."
+requires-python = ">=3.11"
+dependencies = [
+    "PyYAML>=6.0.2,<7",
+]
+
+[project.scripts]
+pr-record = "pr_record.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3,<10",
+    "pytest-cov>=6,<8",
+    "ruff>=0.12,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "SIM", "UP"]
+
+[tool.coverage.run]
+branch = true
+source = ["pr_record"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

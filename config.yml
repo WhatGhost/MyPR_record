@@ -1,0 +1,14 @@
+github:
+  username: "WhatGhost"
+  include_private: false
+
+  # Repository names are matched case-insensitively against owner/repository.
+  # Shell-style wildcards are supported, for example: "my-org/*".
+  excluded_repositories:
+    - "WhatGhost/MyPR_record"
+    - "WhatGhost/whatghost_Notebooks"
+
+files:
+  data: "data/prs.json"
+  notes: "notes.yml"
+  readme: "README.md"
