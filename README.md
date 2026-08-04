@@ -8,11 +8,11 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 47 | 35 | 6 | 6 | 0 | 19 | 85.4% | 74.5% |
+| 44 | 35 | 4 | 5 | 0 | 18 | 87.5% | 79.5% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +206,457 | -780 | 834 |
+| +206,078 | -770 | 818 |
 
 ## 年度统计
 
@@ -21,7 +21,7 @@
 | 2026 | 19 | 14 | 4 | 1 | 10 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
-| 2023 | 12 | 9 | 2 | 1 | 3 |
+| 2023 | 9 | 9 | 0 | 0 | 2 |
 | 2022 | 3 | 2 | 0 | 1 | 2 |
 | 2018 | 8 | 7 | 0 | 1 | 2 |
 
@@ -36,7 +36,6 @@
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [WhatGhost/CINN](https://github.com/WhatGhost/CINN) | 3 | 0 | 2 | 1 | 0 | 0.0% | 0.0% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 2 | 1 | 1 | 0 | 0 | 100.0% | 50.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -95,16 +94,13 @@
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | [#1298 Fix bugs in denseMergePass](https://github.com/PaddlePaddle/CINN/pull/1298) | 🟣 Merged | 2023-03-23 | 2023-03-28 | +11 / -2 | contributor | — | — |
-| [WhatGhost/CINN](https://github.com/WhatGhost/CINN) | [#3 Dev/relation func](https://github.com/WhatGhost/CINN/pull/3) | 🟢 Open | 2023-03-21 | — | +56 / -6 | — | — | — |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | [#1273 change OpPatternKind of lookup_table to kInjective](https://github.com/PaddlePaddle/CINN/pull/1273) | 🟣 Merged | 2023-03-16 | 2023-03-20 | +1 / -1 | — | — | — |
 | [apache/tvm](https://github.com/apache/tvm) | [#14170 \[Frontend\]\[Paddle\]add take_alone_axis and topk converter for paddle frontend](https://github.com/apache/tvm/pull/14170) | 🟣 Merged | 2023-03-02 | 2023-03-12 | +39 / -2 | — | — | — |
 | [apache/tvm](https://github.com/apache/tvm) | [#14099 \[Frontend\]\[Paddle\] Add where_index op and add vm for paddle frontend's unitest](https://github.com/apache/tvm/pull/14099) | 🟣 Merged | 2023-02-23 | 2023-02-23 | +54 / -10 | — | — | — |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | [#1220 cast output berfore calculating bias and scale in layernorm op mapper while using mixed precision](https://github.com/PaddlePaddle/CINN/pull/1220) | 🟣 Merged | 2023-02-23 | 2023-02-23 | +4 / -4 | — | — | — |
-| [WhatGhost/CINN](https://github.com/WhatGhost/CINN) | [#2 add cast for bias and scale in layer_norm op while using fp16](https://github.com/WhatGhost/CINN/pull/2) | 🟢 Open | 2023-02-22 | — | +8 / -2 | — | — | — |
 | [apache/tvm](https://github.com/apache/tvm) | [#14049 \[Frontend\]\[Paddle\] Add norm and one_hot_v2 op ](https://github.com/apache/tvm/pull/14049) | 🟣 Merged | 2023-02-20 | 2023-02-20 | +54 / -0 | — | — | — |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | [#1209 Fix bugs in norm op_mapper](https://github.com/PaddlePaddle/CINN/pull/1209) | 🟣 Merged | 2023-02-15 | 2023-02-16 | +3 / -3 | — | — | — |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | [#1195 Add norm op](https://github.com/PaddlePaddle/CINN/pull/1195) | 🟣 Merged | 2023-02-10 | 2023-02-13 | +297 / -1 | contributor | — | — |
-| [WhatGhost/CINN](https://github.com/WhatGhost/CINN) | [#1 Dev/norm op](https://github.com/WhatGhost/CINN/pull/1) | 🔴 Closed | 2023-02-08 | — | +315 / -2 | — | — | — |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | [#1178 Add opMapper for one_hot_v2](https://github.com/PaddlePaddle/CINN/pull/1178) | 🟣 Merged | 2023-02-06 | 2023-02-06 | +134 / -0 | — | — | — |
 
 ### 2022

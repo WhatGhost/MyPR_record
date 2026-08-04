@@ -474,24 +474,6 @@
       ]
     },
     {
-      "id": "PR_kwDOIrQxW85MiNMS",
-      "repository": "WhatGhost/CINN",
-      "number": 3,
-      "title": "Dev/relation func",
-      "url": "https://github.com/WhatGhost/CINN/pull/3",
-      "state": "OPEN",
-      "is_draft": false,
-      "is_private": false,
-      "created_at": "2023-03-21T11:19:34Z",
-      "updated_at": "2023-03-21T11:19:34Z",
-      "closed_at": null,
-      "merged_at": null,
-      "additions": 56,
-      "deletions": 6,
-      "changed_files": 2,
-      "labels": []
-    },
-    {
       "id": "PR_kwDODes-rM5MNChl",
       "repository": "PaddlePaddle/CINN",
       "number": 1273,
@@ -564,24 +546,6 @@
       "labels": []
     },
     {
-      "id": "PR_kwDOIrQxW85KgSts",
-      "repository": "WhatGhost/CINN",
-      "number": 2,
-      "title": "add cast for bias and scale in layer_norm op while using fp16",
-      "url": "https://github.com/WhatGhost/CINN/pull/2",
-      "state": "OPEN",
-      "is_draft": false,
-      "is_private": false,
-      "created_at": "2023-02-22T11:18:16Z",
-      "updated_at": "2023-02-22T11:18:16Z",
-      "closed_at": null,
-      "merged_at": null,
-      "additions": 8,
-      "deletions": 2,
-      "changed_files": 1,
-      "labels": []
-    },
-    {
       "id": "PR_kwDOBDeBdM5KT4Ay",
       "repository": "apache/tvm",
       "number": 14049,
@@ -636,24 +600,6 @@
       "labels": [
         "contributor"
       ]
-    },
-    {
-      "id": "PR_kwDOIrQxW85JfL08",
-      "repository": "WhatGhost/CINN",
-      "number": 1,
-      "title": "Dev/norm op",
-      "url": "https://github.com/WhatGhost/CINN/pull/1",
-      "state": "CLOSED",
-      "is_draft": false,
-      "is_private": false,
-      "created_at": "2023-02-08T03:16:42Z",
-      "updated_at": "2023-02-16T03:13:28Z",
-      "closed_at": "2023-02-09T12:46:22Z",
-      "merged_at": null,
-      "additions": 315,
-      "deletions": 2,
-      "changed_files": 13,
-      "labels": []
     },
     {
       "id": "PR_kwDODes-rM5JTE5R",
