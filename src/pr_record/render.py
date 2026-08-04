@@ -88,10 +88,8 @@ def build_generated_markdown(
     """Build the complete generated Markdown section."""
 
     stats = calculate_stats(pull_requests)
-    merge_rate = "—" if stats.merge_rate is None else f"{stats.merge_rate:.1%}"
-    overall_merge_rate = (
-        "—" if stats.overall_merge_rate is None else f"{stats.overall_merge_rate:.1%}"
-    )
+    merge_rate = _display_rate(stats.merge_rate)
+    overall_merge_rate = _display_rate(stats.overall_merge_rate)
     lines = [
         "## 贡献概览",
         "",
@@ -126,6 +124,35 @@ def build_generated_markdown(
             lines.append(
                 f"| {year} | {year_stats.total} | {year_stats.merged} | {year_stats.open} | "
                 f"{year_stats.closed} | {year_stats.repositories} |"
+            )
+    else:
+        lines.append("> 尚未同步到符合条件的 PR。")
+
+    lines.extend(["", "## 仓库统计", ""])
+    by_repository = _group_by_repository(pull_requests)
+    if by_repository:
+        lines.extend(
+            [
+                (
+                    "| 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | "
+                    "已结束 PR 合并率 | 总体合并率（含 Open） |"
+                ),
+                "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
+            ]
+        )
+        for repository, repository_pull_requests in by_repository:
+            repository_stats = calculate_stats(repository_pull_requests)
+            repository_name = _escape_table_text(repository)
+            repository_url = f"https://github.com/{repository}"
+            lines.append(
+                f"| [{repository_name}]({repository_url}) "
+                f"| {repository_stats.total} "
+                f"| {repository_stats.merged} "
+                f"| {repository_stats.open} "
+                f"| {repository_stats.closed} "
+                f"| {repository_stats.draft} "
+                f"| {_display_rate(repository_stats.merge_rate)} "
+                f"| {_display_rate(repository_stats.overall_merge_rate)} |"
             )
     else:
         lines.append("> 尚未同步到符合条件的 PR。")
@@ -202,6 +229,21 @@ def _group_by_year(pull_requests: list[PullRequest]) -> dict[str, list[PullReque
     return result
 
 
+def _group_by_repository(
+    pull_requests: list[PullRequest],
+) -> list[tuple[str, list[PullRequest]]]:
+    grouped: dict[str, list[PullRequest]] = {}
+    for pull_request in pull_requests:
+        grouped.setdefault(pull_request.repository.casefold(), []).append(pull_request)
+
+    result = [
+        (repository_pull_requests[0].repository, repository_pull_requests)
+        for repository_pull_requests in grouped.values()
+    ]
+    result.sort(key=lambda item: (-len(item[1]), item[0].casefold()))
+    return result
+
+
 def _display_state(pull_request: PullRequest) -> str:
     if pull_request.is_draft and pull_request.normalized_state == "OPEN":
         return "⚪ Draft"
@@ -216,6 +258,10 @@ def _display_date(timestamp: str | None) -> str:
     if timestamp is None:
         return "—"
     return timestamp[:10] if len(timestamp) >= 10 else timestamp
+
+
+def _display_rate(rate: float | None) -> str:
+    return "—" if rate is None else f"{rate:.1%}"
 
 
 def _escape_table_text(value: str) -> str:

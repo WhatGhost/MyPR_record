@@ -21,14 +21,15 @@ def _pull_request(
     is_draft: bool = False,
     title: str = "Improve docs",
     created_at: str = "2026-08-01T10:00:00Z",
+    repository: str = "octocat/hello-world",
 ) -> PullRequest:
     number = int(node_id.removeprefix("PR_"))
     return PullRequest(
         id=node_id,
-        repository="octocat/hello-world",
+        repository=repository,
         number=number,
         title=title,
-        url=f"https://github.com/octocat/hello-world/pull/{number}",
+        url=f"https://github.com/{repository}/pull/{number}",
         state=state,
         is_draft=is_draft,
         is_private=False,
@@ -94,6 +95,42 @@ def test_generated_markdown_shows_missing_merge_date_for_open_pr() -> None:
 
     assert "| 2026-08-01 | — | +10 / -2 |" in markdown
     assert "| 1 | 0 | 1 | 0 | 0 | 1 | — | 0.0% |" in markdown
+
+
+def test_generated_markdown_groups_and_sorts_repository_stats() -> None:
+    pull_requests = [
+        _pull_request(
+            "PR_1",
+            repository="alpha/project",
+            state="MERGED",
+            merged_at="2026-08-02T00:00:00Z",
+        ),
+        _pull_request("PR_2", repository="alpha/project", state="CLOSED"),
+        _pull_request("PR_3", repository="alpha/project", is_draft=True),
+        _pull_request(
+            "PR_4",
+            repository="beta/project",
+            state="MERGED",
+            merged_at="2026-08-02T00:00:00Z",
+        ),
+    ]
+
+    markdown = build_generated_markdown(pull_requests, {})
+
+    alpha_row = (
+        "| [alpha/project](https://github.com/alpha/project) "
+        "| 3 | 1 | 1 | 1 | 1 | 50.0% | 33.3% |"
+    )
+    beta_row = (
+        "| [beta/project](https://github.com/beta/project) "
+        "| 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |"
+    )
+    assert "## 仓库统计" in markdown
+    assert alpha_row in markdown
+    assert beta_row in markdown
+    assert markdown.index(alpha_row) < markdown.index(beta_row)
+    assert markdown.index("## 年度统计") < markdown.index("## 仓库统计")
+    assert markdown.index("## 仓库统计") < markdown.index("## PR 明细")
 
 
 def test_generated_markdown_escapes_html_and_marker_injection() -> None:
