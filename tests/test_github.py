@@ -1,4 +1,5 @@
 from collections.abc import Mapping
+from datetime import date
 from typing import Any
 
 import pytest
@@ -94,6 +95,43 @@ def test_search_pull_requests_partitions_large_result_by_year() -> None:
 def test_search_pull_requests_rejects_invalid_username() -> None:
     with pytest.raises(ValueError, match="Invalid GitHub username"):
         GitHubClient("token").search_pull_requests("invalid user")
+
+
+def test_search_pull_requests_since_uses_created_date_qualifier() -> None:
+    search_queries: list[str] = []
+
+    def transport(query: str, variables: Mapping[str, Any]) -> Mapping[str, Any]:
+        assert "PullRequestSearch" in query
+        search_queries.append(str(variables["searchQuery"]))
+        return _response([_node("PR_1")])
+
+    pull_requests = GitHubClient("token", transport=transport).search_pull_requests_since(
+        "octocat",
+        date(2026, 7, 31),
+    )
+
+    assert [pull_request.id for pull_request in pull_requests] == ["PR_1"]
+    assert search_queries == [
+        "is:pr author:octocat created:>=2026-07-31 sort:created-asc"
+    ]
+
+
+def test_get_pull_requests_by_ids_deduplicates_and_batches() -> None:
+    batches: list[list[str]] = []
+
+    def transport(query: str, variables: Mapping[str, Any]) -> Mapping[str, Any]:
+        assert "PullRequestNodes" in query
+        node_ids = list(variables["ids"])
+        batches.append(node_ids)
+        return {"nodes": [_node(node_id) for node_id in node_ids]}
+
+    node_ids = [f"PR_{number}" for number in range(1, 102)]
+    pull_requests = GitHubClient("token", transport=transport).get_pull_requests_by_ids(
+        [*node_ids, "PR_1"]
+    )
+
+    assert [len(batch) for batch in batches] == [100, 1]
+    assert [pull_request.id for pull_request in pull_requests] == node_ids
 
 
 def test_search_pull_requests_requires_next_page_cursor() -> None:

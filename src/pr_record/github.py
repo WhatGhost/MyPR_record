@@ -7,7 +7,7 @@ import json
 import re
 from collections.abc import Callable, Mapping
 from dataclasses import dataclass
-from datetime import UTC, datetime
+from datetime import UTC, date, datetime
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -16,46 +16,62 @@ from pr_record.models import PullRequest
 
 GRAPHQL_ENDPOINT = "https://api.github.com/graphql"
 SEARCH_RESULT_LIMIT = 1_000
+NODE_LOOKUP_BATCH_SIZE = 100
 GITHUB_FIRST_YEAR = 2008
 USERNAME_PATTERN = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$")
 
-PULL_REQUEST_SEARCH_QUERY = """
-query PullRequestSearch($searchQuery: String!, $cursor: String) {
-  search(query: $searchQuery, type: ISSUE, first: 100, after: $cursor) {
-    issueCount
-    pageInfo {
-      hasNextPage
-      endCursor
+PULL_REQUEST_FRAGMENT = """
+fragment PullRequestFields on PullRequest {
+    id
+    number
+    title
+    url
+    state
+    isDraft
+    createdAt
+    updatedAt
+    closedAt
+    mergedAt
+    additions
+    deletions
+    changedFiles
+    repository {
+        nameWithOwner
+        isPrivate
     }
-    nodes {
-      ... on PullRequest {
-        id
-        number
-        title
-        url
-        state
-        isDraft
-        createdAt
-        updatedAt
-        closedAt
-        mergedAt
-        additions
-        deletions
-        changedFiles
-        repository {
-          nameWithOwner
-          isPrivate
-        }
-        labels(first: 100) {
-          nodes {
+    labels(first: 100) {
+        nodes {
             name
-          }
         }
-      }
     }
-  }
 }
 """.strip()
+
+PULL_REQUEST_SEARCH_OPERATION = """
+query PullRequestSearch($searchQuery: String!, $cursor: String) {
+    search(query: $searchQuery, type: ISSUE, first: 100, after: $cursor) {
+        issueCount
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+        nodes {
+            ...PullRequestFields
+        }
+    }
+}
+""".strip()
+
+PULL_REQUEST_NODES_OPERATION = """
+query PullRequestNodes($ids: [ID!]!) {
+    nodes(ids: $ids) {
+        ...PullRequestFields
+    }
+}
+""".strip()
+
+PULL_REQUEST_SEARCH_QUERY = f"{PULL_REQUEST_SEARCH_OPERATION}\n\n{PULL_REQUEST_FRAGMENT}"
+PULL_REQUEST_NODES_QUERY = f"{PULL_REQUEST_NODES_OPERATION}\n\n{PULL_REQUEST_FRAGMENT}"
 
 GraphQLTransport = Callable[[str, Mapping[str, Any]], Mapping[str, Any]]
 
@@ -89,15 +105,49 @@ class GitHubClient:
     def search_pull_requests(self, username: str) -> list[PullRequest]:
         """Return all pull requests authored by a GitHub username."""
 
-        if not USERNAME_PATTERN.fullmatch(username):
-            raise ValueError(f"Invalid GitHub username: {username!r}")
-
+        _validate_username(username)
         base_query = f"is:pr author:{username} sort:created-asc"
         try:
             return self._search_window(base_query)
         except _SearchWindowTooLarge as error:
             first_year = error.earliest_year or GITHUB_FIRST_YEAR
             return self._search_partitioned(base_query, first_year)
+
+    def search_pull_requests_since(
+        self,
+        username: str,
+        created_since: date,
+    ) -> list[PullRequest]:
+        """Return authored PRs created on or after a date, including overlap."""
+
+        _validate_username(username)
+        search_query = (
+            f"is:pr author:{username} created:>={created_since.isoformat()} sort:created-asc"
+        )
+        try:
+            return self._search_window(search_query)
+        except _SearchWindowTooLarge as exc:
+            raise GitHubAPIError(
+                f"More than {SEARCH_RESULT_LIMIT} PRs were found since {created_since.isoformat()}"
+            ) from exc
+
+    def get_pull_requests_by_ids(self, node_ids: list[str]) -> list[PullRequest]:
+        """Return PRs for GitHub node IDs in bounded GraphQL batches."""
+
+        unique_ids = list(dict.fromkeys(node_ids))
+        pull_requests: list[PullRequest] = []
+        for offset in range(0, len(unique_ids), NODE_LOOKUP_BATCH_SIZE):
+            batch = unique_ids[offset : offset + NODE_LOOKUP_BATCH_SIZE]
+            response = self._transport(PULL_REQUEST_NODES_QUERY, {"ids": batch})
+            raw_nodes = response.get("nodes")
+            if not isinstance(raw_nodes, list):
+                raise GitHubAPIError("GitHub response field data.nodes must be a list")
+            for raw_node in raw_nodes:
+                if raw_node is not None:
+                    pull_requests.append(
+                        _parse_pull_request(_require_mapping(raw_node, "PR node"))
+                    )
+        return pull_requests
 
     def _search_partitioned(self, base_query: str, first_year: int) -> list[PullRequest]:
         pull_requests: dict[str, PullRequest] = {}
@@ -232,6 +282,11 @@ def _parse_pull_request(node: Mapping[str, Any]) -> PullRequest:
         changed_files=_require_int(node.get("changedFiles"), "PR changedFiles"),
         labels=tuple(sorted(labels, key=str.casefold)),
     )
+
+
+def _validate_username(username: str) -> None:
+    if not USERNAME_PATTERN.fullmatch(username):
+        raise ValueError(f"Invalid GitHub username: {username!r}")
 
 
 def _earliest_year(nodes: list[Any]) -> int | None:

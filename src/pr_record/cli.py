@@ -27,7 +27,15 @@ def build_parser() -> argparse.ArgumentParser:
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("render", help="Render README from the local data file.")
-    subparsers.add_parser("sync", help="Fetch PRs, persist them, and render README.")
+    sync_parser = subparsers.add_parser(
+        "sync",
+        help="Fetch PRs, persist them, and render README.",
+    )
+    sync_parser.add_argument(
+        "--full",
+        action="store_true",
+        help="Refresh all authored PRs instead of only new and open PRs.",
+    )
     return parser
 
 
@@ -45,7 +53,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         token = os.environ.get("PR_READ_TOKEN", "").strip()
         if not token:
             raise ConfigError("PR_READ_TOKEN is required for the sync command")
-        summary = sync_from_github(config, token)
+        summary = sync_from_github(config, token, full=args.full)
         readme_changed = render_from_files(config)
         print(
             f"Synchronized {summary.fetched} PRs; retained {summary.total}; "

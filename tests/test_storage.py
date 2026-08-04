@@ -76,5 +76,6 @@ octocat/hello-world#8: Small follow-up.
     notes = load_notes(path)
 
     assert notes["octocat/hello-world#7"].category == "Documentation"
+    assert notes["octocat/hello-world#7"].note == "Improved the example."
     assert notes["octocat/hello-world#7"].highlight
     assert notes["octocat/hello-world#8"].note == "Small follow-up."

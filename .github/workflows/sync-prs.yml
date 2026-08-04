@@ -2,6 +2,15 @@ name: Sync pull requests
 
 on:
   workflow_dispatch:
+    inputs:
+      sync_mode:
+        description: Synchronization mode
+        required: true
+        default: full
+        type: choice
+        options:
+          - full
+          - incremental
   schedule:
     - cron: "17 3 * * *"
       timezone: "Asia/Shanghai"
@@ -36,9 +45,16 @@ jobs:
         run: python -m pip install --disable-pip-version-check .
 
       - name: Synchronize and render
+        shell: bash
         env:
           PR_READ_TOKEN: ${{ secrets.PR_READ_TOKEN }}
-        run: python -m pr_record sync
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" \
+            && "${{ inputs.sync_mode }}" == "full" ]]; then
+            python -m pr_record sync --full
+          else
+            python -m pr_record sync
+          fi
 
       - name: Commit generated changes
         shell: bash

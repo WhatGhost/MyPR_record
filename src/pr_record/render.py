@@ -42,6 +42,14 @@ class PullRequestStats:
             return None
         return self.merged / terminal_count
 
+    @property
+    def overall_merge_rate(self) -> float | None:
+        """Return merged PRs divided by all included PRs, including open PRs."""
+
+        if self.total == 0:
+            return None
+        return self.merged / self.total
+
 
 def calculate_stats(pull_requests: list[PullRequest]) -> PullRequestStats:
     """Calculate aggregate statistics from included PRs."""
@@ -81,14 +89,20 @@ def build_generated_markdown(
 
     stats = calculate_stats(pull_requests)
     merge_rate = "—" if stats.merge_rate is None else f"{stats.merge_rate:.1%}"
+    overall_merge_rate = (
+        "—" if stats.overall_merge_rate is None else f"{stats.overall_merge_rate:.1%}"
+    )
     lines = [
         "## 贡献概览",
         "",
-        "| PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 合并率 |",
-        "| ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
+        (
+            "| PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | "
+            "已结束 PR 合并率 | 总体合并率（含 Open） |"
+        ),
+        "| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
         (
             f"| {stats.total} | {stats.merged} | {stats.open} | {stats.closed} | "
-            f"{stats.draft} | {stats.repositories} | {merge_rate} |"
+            f"{stats.draft} | {stats.repositories} | {merge_rate} | {overall_merge_rate} |"
         ),
         "",
         "| 新增代码 | 删除代码 | 变更文件 |",
@@ -126,8 +140,11 @@ def build_generated_markdown(
             [
                 f"### {year}",
                 "",
-                "| 日期 | 仓库 | Pull Request | 状态 | 代码变更 | 标签 | 分类 | 备注 |",
-                "| --- | --- | --- | --- | ---: | --- | --- | --- |",
+                (
+                    "| 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | "
+                    "代码变更 | 标签 | 分类 | 备注 |"
+                ),
+                "| --- | --- | --- | --- | --- | ---: | --- | --- | --- |",
             ]
         )
         for pull_request in year_pull_requests:
@@ -139,10 +156,11 @@ def build_generated_markdown(
             labels = ", ".join(pull_request.labels) or "—"
             changes = f"+{pull_request.additions:,} / -{pull_request.deletions:,}"
             lines.append(
-                f"| {_display_date(pull_request.created_at)} "
                 f"| [{repository}]({repository_url}) "
                 f"| {title_prefix}[#{pull_request.number} {title}]({pull_request.url}) "
                 f"| {_display_state(pull_request)} "
+                f"| {_display_date(pull_request.created_at)} "
+                f"| {_display_date(pull_request.merged_at)} "
                 f"| {changes} "
                 f"| {_escape_table_text(labels)} "
                 f"| {_escape_table_text(note.category) or '—'} "
@@ -194,7 +212,9 @@ def _display_state(pull_request: PullRequest) -> str:
     }.get(pull_request.normalized_state, pull_request.normalized_state)
 
 
-def _display_date(timestamp: str) -> str:
+def _display_date(timestamp: str | None) -> str:
+    if timestamp is None:
+        return "—"
     return timestamp[:10] if len(timestamp) >= 10 else timestamp
 
 

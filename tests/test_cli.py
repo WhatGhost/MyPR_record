@@ -47,9 +47,10 @@ def test_sync_command_reports_results(tmp_path: Path, monkeypatch, capsys) -> No
     config_path = _write_config(tmp_path)
     monkeypatch.setenv("PR_READ_TOKEN", "read-token")
 
-    def fake_sync(config: AppConfig, token: str) -> SyncSummary:
+    def fake_sync(config: AppConfig, token: str, *, full: bool = False) -> SyncSummary:
         assert config.github_username == "WhatGhost"
         assert token == "read-token"
+        assert not full
         return SyncSummary(total=8, fetched=10, filtered=2, changed=True)
 
     def fake_render(config: AppConfig) -> bool:
@@ -65,3 +66,25 @@ def test_sync_command_reports_results(tmp_path: Path, monkeypatch, capsys) -> No
     assert exit_code == 0
     assert "Synchronized 10 PRs; retained 8; filtered 2" in output
     assert "Generated files updated" in output
+
+
+def test_sync_full_flag_is_forwarded(tmp_path: Path, monkeypatch) -> None:
+    config_path = _write_config(tmp_path)
+    monkeypatch.setenv("PR_READ_TOKEN", "read-token")
+    full_values: list[bool] = []
+
+    def fake_sync(config: AppConfig, token: str, *, full: bool = False) -> SyncSummary:
+        assert config.github_username == "WhatGhost"
+        assert token == "read-token"
+        full_values.append(full)
+        return SyncSummary(total=0, fetched=0, filtered=0, changed=False)
+
+    def fake_render(config: AppConfig) -> bool:
+        assert config.github_username == "WhatGhost"
+        return False
+
+    monkeypatch.setattr(cli_module, "sync_from_github", fake_sync)
+    monkeypatch.setattr(cli_module, "render_from_files", fake_render)
+
+    assert main(["--config", str(config_path), "sync", "--full"]) == 0
+    assert full_values == [True]

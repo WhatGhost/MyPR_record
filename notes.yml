@@ -1,7 +1,7 @@
 # Optional notes keyed by owner/repository#pull-request-number.
 #
 # "microsoft/vscode#12345":
-#   category: "Bug Fix"
+#   category: "Documentation"
 #   note: "Fixed path parsing on Windows."
 #   highlight: true
 {}

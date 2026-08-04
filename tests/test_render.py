@@ -58,10 +58,16 @@ def test_calculate_stats_excludes_open_prs_from_merge_rate() -> None:
     assert stats.closed == 1
     assert stats.draft == 1
     assert stats.merge_rate == 0.5
+    assert stats.overall_merge_rate == pytest.approx(1 / 3)
 
 
-def test_generated_markdown_uses_notes_and_escapes_table_content() -> None:
-    pull_request = _pull_request("PR_7", title="Fix [table] | formatting")
+def test_generated_markdown_uses_dates_and_escapes_table_content() -> None:
+    pull_request = _pull_request(
+        "PR_7",
+        state="MERGED",
+        merged_at="2026-08-03T12:30:00Z",
+        title="Fix [table] | formatting",
+    )
     notes = {
         pull_request.key: PullRequestNote(
             category="Docs | UX",
@@ -73,8 +79,21 @@ def test_generated_markdown_uses_notes_and_escapes_table_content() -> None:
     markdown = build_generated_markdown([pull_request], notes)
 
     assert "⭐ [#7 Fix \\[table\\] \\| formatting]" in markdown
+    assert (
+        "| 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | "
+        "代码变更 | 标签 | 分类 | 备注 |" in markdown
+    )
+    assert "| 2026-08-01 | 2026-08-03 | +10 / -2 |" in markdown
+    assert "| 日期 |" not in markdown
     assert "Docs \\| UX" in markdown
     assert "First line<br>Second line" in markdown
+
+
+def test_generated_markdown_shows_missing_merge_date_for_open_pr() -> None:
+    markdown = build_generated_markdown([_pull_request("PR_9")], {})
+
+    assert "| 2026-08-01 | — | +10 / -2 |" in markdown
+    assert "| 1 | 0 | 1 | 0 | 0 | 1 | — | 0.0% |" in markdown
 
 
 def test_generated_markdown_escapes_html_and_marker_injection() -> None:
