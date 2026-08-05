@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 44 | 35 | 4 | 5 | 0 | 18 | 87.5% | 79.5% |
+| 45 | 36 | 4 | 5 | 0 | 18 | 87.8% | 80.0% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +206,078 | -770 | 818 |
+| +206,123 | -804 | 820 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 19 | 14 | 4 | 1 | 10 |
+| 2026 | 20 | 15 | 4 | 1 | 10 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -30,9 +30,9 @@
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 5 | 5 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
-| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -54,6 +54,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#210 \[docs\] Update fireworks-credits-amd.zh  to link to China ADP](https://github.com/Prism-Shadow/penguin-harness/pull/210) | 🟣 Merged | 2026-08-05 | 2026-08-05 | +45 / -34 | — | — | — |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5100 \[Runtime\]\[AMD\] Add RDNA4 autotune configs for layer_norm and rms_norm](https://github.com/flagos-ai/FlagGems/pull/5100) | 🟢 Open | 2026-07-31 | — | +113 / -4 | size/Medium, vendor/AMD | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#127 fix(cli): decode stdin across chunk boundaries](https://github.com/Prism-Shadow/penguin-harness/pull/127) | 🟣 Merged | 2026-07-30 | 2026-07-30 | +74 / -1 | — | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#126 docs(reference): document run_subagent's provider, three gateway groups, and max_tokens](https://github.com/Prism-Shadow/penguin-harness/pull/126) | 🟣 Merged | 2026-07-30 | 2026-07-30 | +21 / -6 | — | — | — |
