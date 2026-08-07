@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 45 | 36 | 4 | 5 | 0 | 18 | 87.8% | 80.0% |
+| 46 | 36 | 5 | 5 | 0 | 18 | 87.8% | 78.3% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +206,123 | -804 | 820 |
+| +206,695 | -804 | 823 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 20 | 15 | 4 | 1 | 10 |
+| 2026 | 21 | 15 | 5 | 1 | 10 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -35,8 +35,8 @@
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 3 | 1 | 2 | 0 | 0 | 100.0% | 33.3% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 2 | 1 | 1 | 0 | 0 | 100.0% | 50.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
@@ -54,6 +54,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5327 \[AMD\] Add RDNA4 split softmax](https://github.com/flagos-ai/FlagGems/pull/5327) | 🟢 Open | 2026-08-07 | — | +572 / -0 | size/Large, tests, vendor/AMD | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#210 \[docs\] Update fireworks-credits-amd.zh  to link to China ADP](https://github.com/Prism-Shadow/penguin-harness/pull/210) | 🟣 Merged | 2026-08-05 | 2026-08-05 | +45 / -34 | — | — | — |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5100 \[Runtime\]\[AMD\] Add RDNA4 autotune configs for layer_norm and rms_norm](https://github.com/flagos-ai/FlagGems/pull/5100) | 🟢 Open | 2026-07-31 | — | +113 / -4 | size/Medium, vendor/AMD | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#127 fix(cli): decode stdin across chunk boundaries](https://github.com/Prism-Shadow/penguin-harness/pull/127) | 🟣 Merged | 2026-07-30 | 2026-07-30 | +74 / -1 | — | — | — |
