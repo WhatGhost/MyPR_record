@@ -2,6 +2,27 @@
   "schema_version": 1,
   "pull_requests": [
     {
+      "id": "PR_kwDOLjUdrc79a6Gr",
+      "repository": "flagos-ai/FlagGems",
+      "number": 5397,
+      "title": "[AMD] Add RDNA4 heuristics for mean/argmax non-inner reductions",
+      "url": "https://github.com/flagos-ai/FlagGems/pull/5397",
+      "state": "OPEN",
+      "is_draft": false,
+      "is_private": false,
+      "created_at": "2026-08-11T08:59:01Z",
+      "updated_at": "2026-08-11T09:02:14Z",
+      "closed_at": null,
+      "merged_at": null,
+      "additions": 103,
+      "deletions": 0,
+      "changed_files": 2,
+      "labels": [
+        "size/Medium",
+        "vendor/AMD"
+      ]
+    },
+    {
       "id": "PR_kwDOLjUdrc776PAk",
       "repository": "flagos-ai/FlagGems",
       "number": 5327,
@@ -11,7 +32,7 @@
       "is_draft": false,
       "is_private": false,
       "created_at": "2026-08-07T06:57:47Z",
-      "updated_at": "2026-08-10T07:18:05Z",
+      "updated_at": "2026-08-11T02:21:19Z",
       "closed_at": null,
       "merged_at": null,
       "additions": 572,
