@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 49 | 36 | 8 | 5 | 0 | 19 | 87.8% | 73.5% |
+| 50 | 40 | 5 | 5 | 0 | 19 | 88.9% | 80.0% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +207,289 | -828 | 840 |
+| +207,321 | -831 | 842 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 24 | 15 | 8 | 1 | 11 |
+| 2026 | 25 | 19 | 5 | 1 | 11 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -30,17 +30,17 @@
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 5 | 1 | 0 | 0 | 100.0% | 83.3% |
+| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 4 | 1 | 3 | 0 | 0 | 100.0% | 25.0% |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 4 | 3 | 1 | 0 | 0 | 100.0% | 75.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 1 | 1 | 0 | 0 | 100.0% | 50.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
-| [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
@@ -55,12 +55,13 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#972 \[TLE\]\[AMD\] Add local pointers lowering and fix buffer ops address space](https://github.com/flagos-ai/FlagTree/pull/972) | 🟢 Open | 2026-08-12 | — | +123 / -10 | amd, CORE, main, tle | — | — |
-| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#273 feat(cli,core,docs): penguin config model remove](https://github.com/Prism-Shadow/penguin-harness/pull/273) | 🟢 Open | 2026-08-12 | — | +368 / -14 | — | — | — |
+| [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#993 \[AMD\] Guard degenerate axis info in atomic RMW lowering](https://github.com/flagos-ai/FlagTree/pull/993) | 🟢 Open | 2026-08-14 | — | +33 / -3 | amd, CORE, main, tle | — | — |
+| [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#972 \[TLE\]\[AMD\] Add local pointers lowering and fix buffer ops address space](https://github.com/flagos-ai/FlagTree/pull/972) | 🟣 Merged | 2026-08-12 | 2026-08-14 | +123 / -10 | amd, CORE, main, tle | — | — |
+| [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#273 feat(cli,core,docs): penguin config model remove](https://github.com/Prism-Shadow/penguin-harness/pull/273) | 🟣 Merged | 2026-08-12 | 2026-08-14 | +367 / -14 | — | — | — |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5397 \[AMD\] Add RDNA4 heuristics for mean/argmax non-inner reductions](https://github.com/flagos-ai/FlagGems/pull/5397) | 🟢 Open | 2026-08-11 | — | +103 / -0 | size/Medium, vendor/AMD | — | — |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5327 \[AMD\] Add RDNA4 split softmax](https://github.com/flagos-ai/FlagGems/pull/5327) | 🟢 Open | 2026-08-07 | — | +572 / -0 | size/Large, tests, vendor/AMD | — | — |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5327 \[AMD\] Add RDNA4 split softmax](https://github.com/flagos-ai/FlagGems/pull/5327) | 🟣 Merged | 2026-08-07 | 2026-08-14 | +572 / -0 | size/Large, tests, vendor/AMD | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#210 \[docs\] Update fireworks-credits-amd.zh  to link to China ADP](https://github.com/Prism-Shadow/penguin-harness/pull/210) | 🟣 Merged | 2026-08-05 | 2026-08-05 | +45 / -34 | — | — | — |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5100 \[Runtime\]\[AMD\] Add RDNA4 autotune configs for layer_norm and rms_norm](https://github.com/flagos-ai/FlagGems/pull/5100) | 🟢 Open | 2026-07-31 | — | +113 / -4 | size/Medium, vendor/AMD | — | — |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5100 \[Runtime\]\[AMD\] Add RDNA4 autotune configs for layer_norm and rms_norm](https://github.com/flagos-ai/FlagGems/pull/5100) | 🟣 Merged | 2026-07-31 | 2026-08-14 | +113 / -4 | size/Medium, vendor/AMD | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#127 fix(cli): decode stdin across chunk boundaries](https://github.com/Prism-Shadow/penguin-harness/pull/127) | 🟣 Merged | 2026-07-30 | 2026-07-30 | +74 / -1 | — | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#126 docs(reference): document run_subagent's provider, three gateway groups, and max_tokens](https://github.com/Prism-Shadow/penguin-harness/pull/126) | 🟣 Merged | 2026-07-30 | 2026-07-30 | +21 / -6 | — | — | — |
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | [#121 \[ROCm\] add rocm/hip backend and add pic for build of rocm/hip](https://github.com/handy-computer/transcribe.cpp/pull/121) | 🟣 Merged | 2026-07-30 | 2026-07-31 | +307 / -70 | — | — | — |
