@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 50 | 41 | 4 | 5 | 0 | 19 | 89.1% | 82.0% |
+| 51 | 41 | 5 | 5 | 0 | 20 | 89.1% | 80.4% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +207,321 | -831 | 842 |
+| +208,746 | -834 | 850 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 25 | 20 | 4 | 1 | 11 |
+| 2026 | 26 | 20 | 5 | 1 | 12 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -48,6 +48,7 @@
 | [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [thu-pacman/chitu](https://github.com/thu-pacman/chitu) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
+| [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 
 ## PR 明细
 
@@ -55,6 +56,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#113 Add Muse Glimmer GGUF support](https://github.com/vllm-project/vllm-gguf-plugin/pull/113) | 🟢 Open | 2026-08-19 | — | +1,425 / -3 | — | — | — |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#993 \[AMD\] Guard degenerate axis info in atomic RMW lowering](https://github.com/flagos-ai/FlagTree/pull/993) | 🟣 Merged | 2026-08-14 | 2026-08-15 | +33 / -3 | amd, CORE, main, tle | — | — |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#972 \[TLE\]\[AMD\] Add local pointers lowering and fix buffer ops address space](https://github.com/flagos-ai/FlagTree/pull/972) | 🟣 Merged | 2026-08-12 | 2026-08-14 | +123 / -10 | amd, CORE, main, tle | — | — |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | [#273 feat(cli,core,docs): penguin config model remove](https://github.com/Prism-Shadow/penguin-harness/pull/273) | 🟣 Merged | 2026-08-12 | 2026-08-14 | +367 / -14 | — | — | — |
