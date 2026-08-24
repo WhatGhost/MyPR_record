@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 56 | 41 | 10 | 5 | 1 | 21 | 89.1% | 73.2% |
+| 58 | 41 | 12 | 5 | 1 | 21 | 89.1% | 70.7% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +213,738 | -897 | 882 |
+| +214,120 | -944 | 891 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 31 | 20 | 10 | 1 | 13 |
+| 2026 | 33 | 20 | 12 | 1 | 13 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -31,14 +31,14 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 5 | 3 | 2 | 0 | 0 | 100.0% | 60.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 4 | 3 | 1 | 0 | 0 | 100.0% | 75.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 0 | 3 | 0 | 0 | — | 0.0% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
-| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 2 | 0 | 2 | 0 | 0 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -57,6 +57,8 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1267 fix(provenance,patcher): a declared framework venv wins over the orchestrator's interpreter](https://github.com/AMD-AGI/Hyperloom/pull/1267) | 🟢 Open | 2026-08-24 | — | +64 / -32 | — | — | — |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5702 \[AMD\] Add RDNA3 split softmax](https://github.com/flagos-ai/FlagGems/pull/5702) | 🟢 Open | 2026-08-24 | — | +318 / -15 | size/Medium, tests, vendor/AMD | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#117 \[Refactor\] Drop the GGUF draft workarounds now that vLLM covers them ](https://github.com/vllm-project/vllm-gguf-plugin/pull/117) | ⚪ Draft | 2026-08-21 | — | +2,359 / -30 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#53214 \[Spec Decode\] Support single-file checkpoints for target and draft models](https://github.com/vllm-project/vllm/pull/53214) | 🟢 Open | 2026-08-21 | — | +182 / -6 | — | — | — |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1246 fix(writeback): stack every applied explore winner, not just the best…](https://github.com/AMD-AGI/Hyperloom/pull/1246) | 🟢 Open | 2026-08-20 | — | +72 / -11 | — | — | — |
