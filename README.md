@@ -12,7 +12,7 @@
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +674,312 | -125,814 | 3,452 |
+| +450,007 | -63,518 | 2,185 |
 
 ## 年度统计
 
@@ -57,13 +57,13 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1267 fix(provenance,patcher): a declared framework venv wins over the orchestrator's interpreter](https://github.com/AMD-AGI/Hyperloom/pull/1267) | 🟢 Open | 2026-08-24 | — | +235,861 / -62,606 | — | — | — |
+| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1267 fix(provenance,patcher): a declared framework venv wins over the orchestrator's interpreter](https://github.com/AMD-AGI/Hyperloom/pull/1267) | 🟢 Open | 2026-08-24 | — | +235,844 / -62,606 | — | — | — |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5702 \[AMD\] Add RDNA3 split softmax](https://github.com/flagos-ai/FlagGems/pull/5702) | 🟢 Open | 2026-08-24 | — | +318 / -15 | size/Medium, tests, vendor/AMD | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#117 \[Refactor\] Drop the GGUF draft workarounds now that vLLM covers them ](https://github.com/vllm-project/vllm-gguf-plugin/pull/117) | ⚪ Draft | 2026-08-21 | — | +2,359 / -30 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#53214 \[Spec Decode\] Support single-file checkpoints for target and draft models](https://github.com/vllm-project/vllm/pull/53214) | 🟢 Open | 2026-08-21 | — | +182 / -6 | — | — | — |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1246 fix(writeback): stack every applied explore winner, not just the best…](https://github.com/AMD-AGI/Hyperloom/pull/1246) | 🔴 Closed | 2026-08-20 | — | +72 / -11 | — | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#115 \[Models\] Support the Muse Glimmer dflash draft model in GGUF](https://github.com/vllm-project/vllm-gguf-plugin/pull/115) | 🟢 Open | 2026-08-20 | — | +2,334 / -14 | — | — | — |
-| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1237 fix(coordinator): route target_reached through CLOSE so the close seq…](https://github.com/AMD-AGI/Hyperloom/pull/1237) | 🟢 Open | 2026-08-20 | — | +224,440 / -62,298 | — | — | — |
+| [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1237 fix(coordinator): route target_reached through CLOSE so the close seq…](https://github.com/AMD-AGI/Hyperloom/pull/1237) | 🟢 Open | 2026-08-20 | — | +152 / -2 | — | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#113 Add Muse Glimmer GGUF support](https://github.com/vllm-project/vllm-gguf-plugin/pull/113) | 🟢 Open | 2026-08-19 | — | +1,425 / -3 | — | — | — |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#993 \[AMD\] Guard degenerate axis info in atomic RMW lowering](https://github.com/flagos-ai/FlagTree/pull/993) | 🟣 Merged | 2026-08-14 | 2026-08-15 | +33 / -3 | amd, CORE, main, tle | — | — |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | [#972 \[TLE\]\[AMD\] Add local pointers lowering and fix buffer ops address space](https://github.com/flagos-ai/FlagTree/pull/972) | 🟣 Merged | 2026-08-12 | 2026-08-14 | +123 / -10 | amd, CORE, main, tle | — | — |
