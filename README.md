@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 59 | 43 | 10 | 6 | 1 | 21 | 87.8% | 72.9% |
+| 60 | 43 | 11 | 6 | 1 | 21 | 87.8% | 71.7% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +215,367 | -962 | 898 |
+| +215,848 | -962 | 903 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 34 | 22 | 10 | 2 | 13 |
+| 2026 | 35 | 22 | 11 | 2 | 13 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,8 +29,8 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 6 | 3 | 3 | 0 | 0 | 100.0% | 50.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
@@ -57,7 +57,8 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5869 \[AMD\] Add CDNA3 split softmax](https://github.com/flagos-ai/FlagGems/pull/5869) | 🟢 Open | 2026-08-31 | — | +761 / -0 | size/Large, tests, vendor/AMD | — | — |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5918 \[AMD\] Add CDNA4 split softmax](https://github.com/flagos-ai/FlagGems/pull/5918) | 🟢 Open | 2026-09-02 | — | +549 / -0 | size/Large, tests, vendor/AMD | — | — |
+| [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5869 \[AMD\] Add CDNA3 split softmax](https://github.com/flagos-ai/FlagGems/pull/5869) | 🟢 Open | 2026-08-31 | — | +693 / -0 | size/Large, tests, vendor/AMD | — | — |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1267 fix(provenance,patcher): a declared framework venv wins over the orchestrator's interpreter](https://github.com/AMD-AGI/Hyperloom/pull/1267) | 🟣 Merged | 2026-08-24 | 2026-08-31 | +355 / -50 | — | — | — |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5702 \[AMD\] Add RDNA3 split softmax](https://github.com/flagos-ai/FlagGems/pull/5702) | 🟢 Open | 2026-08-24 | — | +318 / -15 | size/Medium, tests, vendor/AMD | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#117 \[Refactor\] Drop the GGUF draft workarounds now that vLLM covers them ](https://github.com/vllm-project/vllm-gguf-plugin/pull/117) | ⚪ Draft | 2026-08-21 | — | +2,359 / -30 | — | — | — |
