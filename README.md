@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 63 | 46 | 11 | 6 | 1 | 23 | 88.5% | 73.0% |
+| 64 | 47 | 11 | 6 | 1 | 23 | 88.7% | 73.4% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +215,902 | -980 | 906 |
+| +215,915 | -981 | 908 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 38 | 25 | 11 | 2 | 15 |
+| 2026 | 39 | 26 | 11 | 2 | 15 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -41,13 +41,13 @@
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 2 | 0 | 2 | 0 | 0 | — | 0.0% |
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [ROCm/aiter](https://github.com/ROCm/aiter) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
@@ -59,6 +59,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1493 fix(rocm): make the aiter attention backend usable on gfx1100/gfx1201](https://github.com/ModelTC/LightX2V/pull/1493) | 🟣 Merged | 2026-09-07 | 2026-09-07 | +13 / -1 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1539 fix(rocm): resolve host-registration runtime per platform](https://github.com/ModelTC/LightLLM/pull/1539) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +33 / -11 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1538 fix(prompt): pass string content for text-only image requests](https://github.com/ModelTC/LightLLM/pull/1538) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +10 / -6 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1472 fix(attn): enable GQA broadcast in torch_sdpa](https://github.com/ModelTC/LightX2V/pull/1472) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +11 / -1 | — | — | — |
