@@ -12,7 +12,7 @@
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +216,366 | -983 | 914 |
+| +216,474 | -983 | 914 |
 
 ## 年度统计
 
@@ -60,7 +60,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | [#5563 docs: add AMD GPU installation guide for MinerU 4.x](https://github.com/opendatalab/MinerU/pull/5563) | 🟢 Open | 2026-09-21 | — | +451 / -2 | — | — | — |
+| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | [#5563 docs: add AMD GPU installation guide for MinerU 4.x](https://github.com/opendatalab/MinerU/pull/5563) | 🟢 Open | 2026-09-21 | — | +559 / -2 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1493 fix(rocm): make the aiter attention backend usable on gfx1100/gfx1201](https://github.com/ModelTC/LightX2V/pull/1493) | 🟣 Merged | 2026-09-07 | 2026-09-07 | +13 / -1 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1539 fix(rocm): resolve host-registration runtime per platform](https://github.com/ModelTC/LightLLM/pull/1539) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +33 / -11 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1538 fix(prompt): pass string content for text-only image requests](https://github.com/ModelTC/LightLLM/pull/1538) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +10 / -6 | — | — | — |
