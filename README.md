@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 66 | 47 | 13 | 6 | 1 | 24 | 88.7% | 71.2% |
+| 66 | 48 | 12 | 6 | 1 | 24 | 88.9% | 72.7% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +216,507 | -995 | 915 |
+| +216,535 | -995 | 915 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 41 | 26 | 13 | 2 | 16 |
+| 2026 | 41 | 27 | 12 | 2 | 16 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -38,7 +38,7 @@
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 2 | 1 | 0 | 0 | 100.0% | 66.7% |
+| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -60,7 +60,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1614 \[Perf\] Compute neopp patch and dense embedding convs as GEMM](https://github.com/ModelTC/LightX2V/pull/1614) | 🟢 Open | 2026-10-14 | — | +33 / -12 | — | — | — |
+| [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1614 \[Perf\] Compute neopp patch and dense embedding convs as GEMM](https://github.com/ModelTC/LightX2V/pull/1614) | 🟣 Merged | 2026-10-14 | 2026-10-15 | +33 / -12 | — | — | — |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | [#5563 docs: add AMD GPU installation guide for MinerU 4.x](https://github.com/opendatalab/MinerU/pull/5563) | 🟢 Open | 2026-09-21 | — | +559 / -2 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1493 fix(rocm): make the aiter attention backend usable on gfx1100/gfx1201](https://github.com/ModelTC/LightX2V/pull/1493) | 🟣 Merged | 2026-09-07 | 2026-09-07 | +13 / -1 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1539 fix(rocm): resolve host-registration runtime per platform](https://github.com/ModelTC/LightLLM/pull/1539) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +33 / -11 | — | — | — |
@@ -92,7 +92,7 @@
 | [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | [#69 \[ROCm\] Add ROCm support and norm op.](https://github.com/Tencent/hpc-ops/pull/69) | 🟢 Open | 2026-07-20 | — | +902 / -70 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#48913  \[Perf\] Avoid full-vocab sort in the small-batch top-k/top-p sampler path](https://github.com/vllm-project/vllm/pull/48913) | 🟢 Open | 2026-07-17 | — | +60 / -2 | v1 | — | — |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | [#10649 \[docs\] Add AMD GPU Cloud link](https://github.com/hiyouga/LlamaFactory/pull/10649) | 🟣 Merged | 2026-07-15 | 2026-07-15 | +2 / -0 | — | — | — |
-| [ROCm/aiter](https://github.com/ROCm/aiter) | [#4234 \[gfx1100\] Add gfx1100 (RDNA3) tuned Triton A16W16 GEMM configs](https://github.com/ROCm/aiter/pull/4234) | 🟢 Open | 2026-07-14 | — | +370 / -0 | — | — | — |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | [#4234 \[Triton/Gluon\] \[Config\] \[gfx1100\] Add gfx1100 (RDNA3) tuned Triton A16W16 GEMM configs](https://github.com/ROCm/aiter/pull/4234) | 🟢 Open | 2026-07-14 | — | +398 / -0 | Config, Triton/Gluon | — | — |
 | [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | [#37 \[blog\] Add Fine-Tuning LlamaFactory with the llamafactory-sft Skill blog](https://github.com/hiyouga/llamafactory-blog/pull/37) | 🟣 Merged | 2026-06-26 | 2026-06-29 | +696 / -0 | — | — | — |
 | [thu-pacman/chitu](https://github.com/thu-pacman/chitu) | [#134 Add missing __init__.py for pd_disaggregation package](https://github.com/thu-pacman/chitu/pull/134) | 🟣 Merged | 2026-06-24 | 2026-06-24 | +7 / -0 | — | — | — |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | [#10600 \[assets\] update llamafactory sft skill guidance](https://github.com/hiyouga/LlamaFactory/pull/10600) | 🟣 Merged | 2026-06-23 | 2026-06-23 | +9 / -8 | solved | — | — |
