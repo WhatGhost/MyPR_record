@@ -12,7 +12,7 @@
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +218,905 | -1,022 | 934 |
+| +218,906 | -1,023 | 935 |
 
 ## 年度统计
 
@@ -63,7 +63,7 @@
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#205 Feat/amd gfx1100 moe](https://github.com/flagos-ai/FlagGems-sglang/pull/205) | 🟣 Merged | 2026-10-22 | 2026-10-22 | +1,310 / -0 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#63015 \[ROCm\]\[Perf\] Keep wvSplitK at YTILE 2 for N=5 on wave64 to avoid VGPR spills](https://github.com/vllm-project/vllm/pull/63015) | 🟢 Open | 2026-10-22 | — | +9 / -0 | rocm | — | — |
-| [ROCm/aiter](https://github.com/ROCm/aiter) | [#6755 \[Triton/Gluon\] gfx950 Gluon unified attention: mask stale V rows past the sequence end](https://github.com/ROCm/aiter/pull/6755) | 🟢 Open | 2026-10-21 | — | +167 / -0 | Triton/Gluon | — | — |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | [#6755 \[Triton/Gluon\] gfx950 Gluon unified attention: mask stale V rows past the sequence end](https://github.com/ROCm/aiter/pull/6755) | 🟢 Open | 2026-10-21 | — | +168 / -1 | Triton/Gluon | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#62799 \[ROCm\]\[Perf\] Add Triton skinny GEMM for 6-128 rows on RDNA4](https://github.com/vllm-project/vllm/pull/62799) | 🟢 Open | 2026-10-21 | — | +317 / -7 | dflash, qwen, rocm | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#199 perf(amd): add gfx1100 w8a8_block_int8_matmul and context_attention](https://github.com/flagos-ai/FlagGems-sglang/pull/199) | 🟣 Merged | 2026-10-21 | 2026-10-21 | +567 / -20 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1614 \[Perf\] Compute neopp patch and dense embedding convs as GEMM](https://github.com/ModelTC/LightX2V/pull/1614) | 🟣 Merged | 2026-10-14 | 2026-10-15 | +33 / -12 | — | — | — |
