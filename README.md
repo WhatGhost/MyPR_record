@@ -8,7 +8,7 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 72 | 51 | 15 | 6 | 1 | 25 | 89.5% | 70.8% |
+| 72 | 52 | 14 | 6 | 1 | 25 | 89.7% | 72.2% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
@@ -18,7 +18,7 @@
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 47 | 30 | 15 | 2 | 17 |
+| 2026 | 47 | 31 | 14 | 2 | 17 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -38,7 +38,7 @@
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 3 | 2 | 1 | 0 | 0 | 100.0% | 66.7% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
@@ -61,7 +61,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#231 perf(amd): add gfx1100 causal_conv1d_fn, chunk_state_varlen and bmm_chunk](https://github.com/flagos-ai/FlagGems-sglang/pull/231) | 🟢 Open | 2026-10-27 | — | +578 / -0 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#231 perf(amd): add gfx1100 causal_conv1d_fn, chunk_state_varlen and bmm_chunk](https://github.com/flagos-ai/FlagGems-sglang/pull/231) | 🟣 Merged | 2026-10-27 | 2026-10-28 | +578 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#205 Feat/amd gfx1100 moe](https://github.com/flagos-ai/FlagGems-sglang/pull/205) | 🟣 Merged | 2026-10-22 | 2026-10-22 | +1,310 / -0 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#63015 \[ROCm\]\[Perf\] Keep wvSplitK at YTILE 2 for N=5 on wave64 to avoid VGPR spills](https://github.com/vllm-project/vllm/pull/63015) | 🟢 Open | 2026-10-22 | — | +9 / -0 | rocm | — | — |
 | [ROCm/aiter](https://github.com/ROCm/aiter) | [#6755 \[Triton/Gluon\] gfx950 Gluon unified attention: mask stale V rows past the sequence end](https://github.com/ROCm/aiter/pull/6755) | 🟢 Open | 2026-10-21 | — | +168 / -1 | Triton/Gluon | — | — |
