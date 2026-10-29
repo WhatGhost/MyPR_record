@@ -8,7 +8,7 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 72 | 52 | 14 | 6 | 1 | 25 | 89.7% | 72.2% |
+| 72 | 52 | 13 | 7 | 1 | 25 | 88.1% | 72.2% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
@@ -18,7 +18,7 @@
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 47 | 31 | 14 | 2 | 17 |
+| 2026 | 47 | 31 | 13 | 3 | 17 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -51,7 +51,7 @@
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
-| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
+| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [thu-pacman/chitu](https://github.com/thu-pacman/chitu) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 
@@ -68,7 +68,7 @@
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#62799 \[ROCm\]\[Perf\] Add Triton skinny GEMM for 6-128 rows on RDNA4](https://github.com/vllm-project/vllm/pull/62799) | 🟢 Open | 2026-10-21 | — | +317 / -7 | dflash, qwen, rocm | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#199 perf(amd): add gfx1100 w8a8_block_int8_matmul and context_attention](https://github.com/flagos-ai/FlagGems-sglang/pull/199) | 🟣 Merged | 2026-10-21 | 2026-10-21 | +567 / -20 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1614 \[Perf\] Compute neopp patch and dense embedding convs as GEMM](https://github.com/ModelTC/LightX2V/pull/1614) | 🟣 Merged | 2026-10-14 | 2026-10-15 | +33 / -12 | — | — | — |
-| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | [#5563 docs: add AMD GPU installation guide for MinerU 4.x](https://github.com/opendatalab/MinerU/pull/5563) | 🟢 Open | 2026-09-21 | — | +559 / -2 | — | — | — |
+| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | [#5563 docs: add AMD GPU installation guide for MinerU 4.x](https://github.com/opendatalab/MinerU/pull/5563) | 🔴 Closed | 2026-09-21 | — | +559 / -2 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1493 fix(rocm): make the aiter attention backend usable on gfx1100/gfx1201](https://github.com/ModelTC/LightX2V/pull/1493) | 🟣 Merged | 2026-09-07 | 2026-09-07 | +13 / -1 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1539 fix(rocm): resolve host-registration runtime per platform](https://github.com/ModelTC/LightLLM/pull/1539) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +33 / -11 | — | — | — |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | [#1538 fix(prompt): pass string content for text-only image requests](https://github.com/ModelTC/LightLLM/pull/1538) | 🟣 Merged | 2026-09-03 | 2026-09-03 | +10 / -6 | — | — | — |
