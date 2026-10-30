@@ -2,6 +2,24 @@
   "schema_version": 1,
   "pull_requests": [
     {
+      "id": "PR_kwDOSYUUCM8AAAABLsYyGw",
+      "repository": "flagos-ai/FlagGems-sglang",
+      "number": 256,
+      "title": "perf(amd): add gfx1100 chunked_sgmv_expand, gate_up_lora_b, sgemm_lora_b, per_group_transpose, silu_and_mul and fused_rmsnorm",
+      "url": "https://github.com/flagos-ai/FlagGems-sglang/pull/256",
+      "state": "OPEN",
+      "is_draft": false,
+      "is_private": false,
+      "created_at": "2026-10-30T04:59:25Z",
+      "updated_at": "2026-10-30T04:59:25Z",
+      "closed_at": null,
+      "merged_at": null,
+      "additions": 975,
+      "deletions": 0,
+      "changed_files": 6,
+      "labels": []
+    },
+    {
       "id": "PR_kwDOSYUUCM8AAAABK_AMhQ",
       "repository": "flagos-ai/FlagGems-sglang",
       "number": 231,
@@ -87,7 +105,7 @@
       "is_draft": false,
       "is_private": false,
       "created_at": "2026-10-21T02:55:18Z",
-      "updated_at": "2026-10-21T03:03:48Z",
+      "updated_at": "2026-10-30T22:37:32Z",
       "closed_at": null,
       "merged_at": null,
       "additions": 317,
@@ -95,6 +113,7 @@
       "changed_files": 4,
       "labels": [
         "dflash",
+        "needs-rebase",
         "qwen",
         "rocm"
       ]
@@ -337,13 +356,15 @@
       "is_draft": false,
       "is_private": false,
       "created_at": "2026-08-21T05:47:16Z",
-      "updated_at": "2026-10-22T04:12:13Z",
+      "updated_at": "2026-10-30T18:24:11Z",
       "closed_at": null,
       "merged_at": null,
       "additions": 182,
       "deletions": 6,
       "changed_files": 4,
-      "labels": []
+      "labels": [
+        "needs-rebase"
+      ]
     },
     {
       "id": "PR_kwDORyoLTs8AAAABAZiT2A",

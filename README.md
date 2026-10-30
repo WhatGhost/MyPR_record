@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 72 | 52 | 13 | 7 | 1 | 25 | 88.1% | 72.2% |
+| 73 | 52 | 14 | 7 | 1 | 25 | 88.1% | 71.2% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +219,484 | -1,023 | 938 |
+| +220,459 | -1,023 | 944 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 47 | 31 | 13 | 3 | 17 |
+| 2026 | 48 | 31 | 14 | 3 | 17 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -34,11 +34,11 @@
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 4 | 3 | 1 | 0 | 0 | 100.0% | 75.0% |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 4 | 0 | 4 | 0 | 0 | — | 0.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
@@ -61,11 +61,12 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#256 perf(amd): add gfx1100 chunked_sgmv_expand, gate_up_lora_b, sgemm_lora_b, per_group_transpose, silu_and_mul and fused_rmsnorm](https://github.com/flagos-ai/FlagGems-sglang/pull/256) | 🟢 Open | 2026-10-30 | — | +975 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#231 perf(amd): add gfx1100 causal_conv1d_fn, chunk_state_varlen and bmm_chunk](https://github.com/flagos-ai/FlagGems-sglang/pull/231) | 🟣 Merged | 2026-10-27 | 2026-10-28 | +578 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#205 Feat/amd gfx1100 moe](https://github.com/flagos-ai/FlagGems-sglang/pull/205) | 🟣 Merged | 2026-10-22 | 2026-10-22 | +1,310 / -0 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#63015 \[ROCm\]\[Perf\] Keep wvSplitK at YTILE 2 for N=5 on wave64 to avoid VGPR spills](https://github.com/vllm-project/vllm/pull/63015) | 🟢 Open | 2026-10-22 | — | +9 / -0 | rocm | — | — |
 | [ROCm/aiter](https://github.com/ROCm/aiter) | [#6755 \[Triton/Gluon\] gfx950 Gluon unified attention: mask stale V rows past the sequence end](https://github.com/ROCm/aiter/pull/6755) | 🟢 Open | 2026-10-21 | — | +168 / -1 | Triton/Gluon | — | — |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#62799 \[ROCm\]\[Perf\] Add Triton skinny GEMM for 6-128 rows on RDNA4](https://github.com/vllm-project/vllm/pull/62799) | 🟢 Open | 2026-10-21 | — | +317 / -7 | dflash, qwen, rocm | — | — |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#62799 \[ROCm\]\[Perf\] Add Triton skinny GEMM for 6-128 rows on RDNA4](https://github.com/vllm-project/vllm/pull/62799) | 🟢 Open | 2026-10-21 | — | +317 / -7 | dflash, needs-rebase, qwen, rocm | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#199 perf(amd): add gfx1100 w8a8_block_int8_matmul and context_attention](https://github.com/flagos-ai/FlagGems-sglang/pull/199) | 🟣 Merged | 2026-10-21 | 2026-10-21 | +567 / -20 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1614 \[Perf\] Compute neopp patch and dense embedding convs as GEMM](https://github.com/ModelTC/LightX2V/pull/1614) | 🟣 Merged | 2026-10-14 | 2026-10-15 | +33 / -12 | — | — | — |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | [#5563 docs: add AMD GPU installation guide for MinerU 4.x](https://github.com/opendatalab/MinerU/pull/5563) | 🔴 Closed | 2026-09-21 | — | +559 / -2 | — | — | — |
@@ -78,7 +79,7 @@
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1267 fix(provenance,patcher): a declared framework venv wins over the orchestrator's interpreter](https://github.com/AMD-AGI/Hyperloom/pull/1267) | 🟣 Merged | 2026-08-24 | 2026-08-31 | +355 / -50 | — | — | — |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | [#5702 \[AMD\] Add RDNA3 split softmax](https://github.com/flagos-ai/FlagGems/pull/5702) | 🟢 Open | 2026-08-24 | — | +318 / -15 | size/Medium, tests, vendor/AMD | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#117 \[Refactor\] Drop the GGUF draft workarounds now that vLLM covers them ](https://github.com/vllm-project/vllm-gguf-plugin/pull/117) | ⚪ Draft | 2026-08-21 | — | +2,359 / -30 | — | — | — |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#53214 \[Spec Decode\] Support single-file checkpoints for target and draft models](https://github.com/vllm-project/vllm/pull/53214) | 🟢 Open | 2026-08-21 | — | +182 / -6 | — | — | — |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#53214 \[Spec Decode\] Support single-file checkpoints for target and draft models](https://github.com/vllm-project/vllm/pull/53214) | 🟢 Open | 2026-08-21 | — | +182 / -6 | needs-rebase | — | — |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1246 fix(writeback): stack every applied explore winner, not just the best…](https://github.com/AMD-AGI/Hyperloom/pull/1246) | 🔴 Closed | 2026-08-20 | — | +72 / -11 | — | — | — |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | [#115 \[Models\] Support the Muse Glimmer dflash draft model in GGUF](https://github.com/vllm-project/vllm-gguf-plugin/pull/115) | 🟢 Open | 2026-08-20 | — | +2,334 / -14 | — | — | — |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | [#1237 fix(coordinator): route target_reached through CLOSE so the close seq…](https://github.com/AMD-AGI/Hyperloom/pull/1237) | 🟣 Merged | 2026-08-20 | 2026-08-27 | +240 / -2 | — | — | — |
