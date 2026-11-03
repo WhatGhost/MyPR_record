@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 73 | 52 | 14 | 7 | 1 | 25 | 88.1% | 71.2% |
+| 74 | 54 | 13 | 7 | 1 | 25 | 88.5% | 73.0% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +220,459 | -1,023 | 944 |
+| +221,787 | -1,023 | 949 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 48 | 31 | 14 | 3 | 17 |
+| 2026 | 49 | 33 | 13 | 3 | 17 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -32,9 +32,9 @@
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 5 | 5 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 4 | 3 | 1 | 0 | 0 | 100.0% | 75.0% |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 4 | 0 | 4 | 0 | 0 | — | 0.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
@@ -61,7 +61,8 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#256 perf(amd): add gfx1100 chunked_sgmv_expand, gate_up_lora_b, sgemm_lora_b, per_group_transpose, silu_and_mul and fused_rmsnorm](https://github.com/flagos-ai/FlagGems-sglang/pull/256) | 🟢 Open | 2026-10-30 | — | +975 / -0 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#271 perf(amd): add gfx1100 decode_attention, decode_grouped_attention, extend_attention and log_scaling_tau](https://github.com/flagos-ai/FlagGems-sglang/pull/271) | 🟣 Merged | 2026-11-02 | 2026-11-02 | +1,328 / -0 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#256 perf(amd): add gfx1100 chunked_sgmv_expand, gate_up_lora_b, sgemm_lora_b, per_group_transpose, silu_and_mul and fused_rmsnorm](https://github.com/flagos-ai/FlagGems-sglang/pull/256) | 🟣 Merged | 2026-10-30 | 2026-11-02 | +975 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#231 perf(amd): add gfx1100 causal_conv1d_fn, chunk_state_varlen and bmm_chunk](https://github.com/flagos-ai/FlagGems-sglang/pull/231) | 🟣 Merged | 2026-10-27 | 2026-10-28 | +578 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#205 Feat/amd gfx1100 moe](https://github.com/flagos-ai/FlagGems-sglang/pull/205) | 🟣 Merged | 2026-10-22 | 2026-10-22 | +1,310 / -0 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#63015 \[ROCm\]\[Perf\] Keep wvSplitK at YTILE 2 for N=5 on wave64 to avoid VGPR spills](https://github.com/vllm-project/vllm/pull/63015) | 🟢 Open | 2026-10-22 | — | +9 / -0 | rocm | — | — |
