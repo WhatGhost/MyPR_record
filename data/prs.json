@@ -2,6 +2,42 @@
   "schema_version": 1,
   "pull_requests": [
     {
+      "id": "PR_kwDOSYUUCM8AAAABMxA_Wg",
+      "repository": "flagos-ai/FlagGems-sglang",
+      "number": 290,
+      "title": "fix(amd): gfx1100 residual_gate_add rounding and silu_and_mul_masked without autotuning",
+      "url": "https://github.com/flagos-ai/FlagGems-sglang/pull/290",
+      "state": "OPEN",
+      "is_draft": false,
+      "is_private": false,
+      "created_at": "2026-11-04T08:57:21Z",
+      "updated_at": "2026-11-04T08:57:21Z",
+      "closed_at": null,
+      "merged_at": null,
+      "additions": 236,
+      "deletions": 0,
+      "changed_files": 2,
+      "labels": []
+    },
+    {
+      "id": "PR_kwDOSYUUCM8AAAABMxA26A",
+      "repository": "flagos-ai/FlagGems-sglang",
+      "number": 289,
+      "title": "fix(ops): rmsnorm_scale_shift widths, qk_head_layernorm GQA and silu_and_mul_masked launches",
+      "url": "https://github.com/flagos-ai/FlagGems-sglang/pull/289",
+      "state": "OPEN",
+      "is_draft": false,
+      "is_private": false,
+      "created_at": "2026-11-04T08:57:12Z",
+      "updated_at": "2026-11-04T08:57:12Z",
+      "closed_at": null,
+      "merged_at": null,
+      "additions": 84,
+      "deletions": 17,
+      "changed_files": 6,
+      "labels": []
+    },
+    {
       "id": "PR_kwDOSYUUCM8AAAABMN_6Ng",
       "repository": "flagos-ai/FlagGems-sglang",
       "number": 271,
@@ -83,13 +119,14 @@
       "is_draft": false,
       "is_private": false,
       "created_at": "2026-10-22T03:07:56Z",
-      "updated_at": "2026-10-22T03:11:32Z",
+      "updated_at": "2026-11-04T22:28:35Z",
       "closed_at": null,
       "merged_at": null,
       "additions": 9,
       "deletions": 0,
       "changed_files": 2,
       "labels": [
+        "needs-rebase",
         "rocm"
       ]
     },
