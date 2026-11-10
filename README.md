@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 78 | 56 | 15 | 7 | 1 | 26 | 88.9% | 71.8% |
+| 79 | 57 | 15 | 7 | 1 | 26 | 89.1% | 72.2% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +222,920 | -1,047 | 964 |
+| +224,180 | -1,047 | 967 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 53 | 35 | 15 | 3 | 18 |
+| 2026 | 54 | 36 | 15 | 3 | 18 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,7 +29,7 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 8 | 7 | 1 | 0 | 0 | 100.0% | 87.5% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 9 | 8 | 1 | 0 | 0 | 100.0% | 88.9% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -62,8 +62,9 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#331 perf(amd): gfx1100 backends for emb LoRA-A, qkv LoRA-B, and get_target_cache_loc](https://github.com/flagos-ai/FlagGems-sglang/pull/331) | 🟢 Open | 2026-11-09 | — | +1,260 / -0 | — | — | — |
 | [flagos-ai/sglang-plugin-FL](https://github.com/flagos-ai/sglang-plugin-FL) | [#174 fix(distributed): use a dedicated FlagCX communicator for the PP receive all_gather](https://github.com/flagos-ai/sglang-plugin-FL/pull/174) | 🟢 Open | 2026-11-06 | — | +273 / -4 | — | — | — |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#298 perf(amd): add gfx1100 tiny_n_gemm and top_p_renorm; fix the generic tiny_n_gemm K tail](https://github.com/flagos-ai/FlagGems-sglang/pull/298) | 🟢 Open | 2026-11-06 | — | +540 / -3 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#298 perf(amd): add gfx1100 tiny_n_gemm and top_p_renorm; fix the generic tiny_n_gemm K tail](https://github.com/flagos-ai/FlagGems-sglang/pull/298) | 🟣 Merged | 2026-11-06 | 2026-11-09 | +540 / -3 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#290 fix(amd): gfx1100 residual_gate_add rounding and silu_and_mul_masked without autotuning](https://github.com/flagos-ai/FlagGems-sglang/pull/290) | 🟣 Merged | 2026-11-04 | 2026-11-05 | +236 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#289 fix(ops): rmsnorm_scale_shift widths, qk_head_layernorm GQA and silu_and_mul_masked launches](https://github.com/flagos-ai/FlagGems-sglang/pull/289) | 🟣 Merged | 2026-11-04 | 2026-11-05 | +84 / -17 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#271 perf(amd): add gfx1100 decode_attention, decode_grouped_attention, extend_attention and log_scaling_tau](https://github.com/flagos-ai/FlagGems-sglang/pull/271) | 🟣 Merged | 2026-11-02 | 2026-11-02 | +1,328 / -0 | — | — | — |
