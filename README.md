@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 79 | 58 | 14 | 7 | 1 | 26 | 89.2% | 73.4% |
+| 81 | 58 | 16 | 7 | 1 | 26 | 89.2% | 71.6% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +224,180 | -1,047 | 967 |
+| +224,558 | -1,056 | 973 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 54 | 37 | 14 | 3 | 18 |
+| 2026 | 56 | 37 | 16 | 3 | 18 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -33,20 +33,20 @@
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 5 | 0 | 5 | 0 | 0 | — | 0.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 4 | 0 | 4 | 0 | 0 | — | 0.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | 3 | 1 | 2 | 0 | 0 | 100.0% | 33.3% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [ROCm/aiter](https://github.com/ROCm/aiter) | 2 | 1 | 1 | 0 | 0 | 100.0% | 50.0% |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [flagos-ai/sglang-plugin-FL](https://github.com/flagos-ai/sglang-plugin-FL) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -62,6 +62,8 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#67013 \[ROCm\]\[Attention\] Support non-causal attention in ROCM_AITER_UNIFIED_ATTN](https://github.com/vllm-project/vllm/pull/67013) | 🟢 Open | 2026-11-11 | — | +52 / -6 | rocm | — | — |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | [#7817 \[Triton/Gluon\] unified_attention: run causal=False on the gfx950 Gluon kernel](https://github.com/ROCm/aiter/pull/7817) | 🟢 Open | 2026-11-11 | — | +326 / -3 | Triton/Gluon | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#331 perf(amd): gfx1100 backends for emb LoRA-A, qkv LoRA-B, and get_target_cache_loc](https://github.com/flagos-ai/FlagGems-sglang/pull/331) | 🟣 Merged | 2026-11-09 | 2026-11-10 | +1,260 / -0 | — | — | — |
 | [flagos-ai/sglang-plugin-FL](https://github.com/flagos-ai/sglang-plugin-FL) | [#174 fix(distributed): use a dedicated FlagCX communicator for the PP receive all_gather](https://github.com/flagos-ai/sglang-plugin-FL/pull/174) | 🟢 Open | 2026-11-06 | — | +273 / -4 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#298 perf(amd): add gfx1100 tiny_n_gemm and top_p_renorm; fix the generic tiny_n_gemm K tail](https://github.com/flagos-ai/FlagGems-sglang/pull/298) | 🟣 Merged | 2026-11-06 | 2026-11-09 | +540 / -3 | — | — | — |
@@ -72,7 +74,7 @@
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#231 perf(amd): add gfx1100 causal_conv1d_fn, chunk_state_varlen and bmm_chunk](https://github.com/flagos-ai/FlagGems-sglang/pull/231) | 🟣 Merged | 2026-10-27 | 2026-10-28 | +578 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#205 Feat/amd gfx1100 moe](https://github.com/flagos-ai/FlagGems-sglang/pull/205) | 🟣 Merged | 2026-10-22 | 2026-10-22 | +1,310 / -0 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#63015 \[ROCm\]\[Perf\] Keep wvSplitK at YTILE 2 for N=5 on wave64 to avoid VGPR spills](https://github.com/vllm-project/vllm/pull/63015) | 🟢 Open | 2026-10-22 | — | +9 / -0 | needs-rebase, rocm | — | — |
-| [ROCm/aiter](https://github.com/ROCm/aiter) | [#6755 \[Triton/Gluon\] gfx950 Gluon unified attention: mask stale V rows past the sequence end](https://github.com/ROCm/aiter/pull/6755) | 🟢 Open | 2026-10-21 | — | +168 / -1 | Triton/Gluon | — | — |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | [#6755 \[Triton/Gluon\] gfx950 Gluon unified attention: mask stale V rows past the sequence end](https://github.com/ROCm/aiter/pull/6755) | 🟢 Open | 2026-10-21 | — | +168 / -1 | stale, Triton/Gluon | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#62799 \[ROCm\]\[Perf\] Add Triton skinny GEMM for 6-128 rows on RDNA4](https://github.com/vllm-project/vllm/pull/62799) | 🟢 Open | 2026-10-21 | — | +317 / -7 | dflash, needs-rebase, qwen, rocm | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#199 perf(amd): add gfx1100 w8a8_block_int8_matmul and context_attention](https://github.com/flagos-ai/FlagGems-sglang/pull/199) | 🟣 Merged | 2026-10-21 | 2026-10-21 | +567 / -20 | — | — | — |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | [#1614 \[Perf\] Compute neopp patch and dense embedding convs as GEMM](https://github.com/ModelTC/LightX2V/pull/1614) | 🟣 Merged | 2026-10-14 | 2026-10-15 | +33 / -12 | — | — | — |
