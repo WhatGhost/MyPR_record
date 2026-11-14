@@ -2,6 +2,24 @@
   "schema_version": 1,
   "pull_requests": [
     {
+      "id": "PR_kwDOSYUUCM8AAAABO2hyVQ",
+      "repository": "flagos-ai/FlagGems-sglang",
+      "number": 371,
+      "title": "perf(amd): speed up gfx1100 silu_and_mul, fused_moe_gemm, tiny_n_gemm and extend_attention",
+      "url": "https://github.com/flagos-ai/FlagGems-sglang/pull/371",
+      "state": "OPEN",
+      "is_draft": false,
+      "is_private": false,
+      "created_at": "2026-11-13T07:14:15Z",
+      "updated_at": "2026-11-13T07:14:15Z",
+      "closed_at": null,
+      "merged_at": null,
+      "additions": 148,
+      "deletions": 47,
+      "changed_files": 4,
+      "labels": []
+    },
+    {
       "id": "PR_kwDOI7xefs8AAAABOVuyMg",
       "repository": "vllm-project/vllm",
       "number": 67013,

@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 81 | 58 | 16 | 7 | 1 | 26 | 89.2% | 71.6% |
+| 82 | 58 | 17 | 7 | 1 | 26 | 89.2% | 70.7% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +224,583 | -1,056 | 973 |
+| +224,731 | -1,103 | 977 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 56 | 37 | 16 | 3 | 18 |
+| 2026 | 57 | 37 | 17 | 3 | 18 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,7 +29,7 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 9 | 9 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 10 | 9 | 1 | 0 | 0 | 100.0% | 90.0% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -62,6 +62,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#371 perf(amd): speed up gfx1100 silu_and_mul, fused_moe_gemm, tiny_n_gemm and extend_attention](https://github.com/flagos-ai/FlagGems-sglang/pull/371) | 🟢 Open | 2026-11-13 | — | +148 / -47 | — | — | — |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | [#67013 \[ROCm\]\[Attention\] Support non-causal attention in ROCM_AITER_UNIFIED_ATTN](https://github.com/vllm-project/vllm/pull/67013) | 🟢 Open | 2026-11-11 | — | +52 / -6 | rocm | — | — |
 | [ROCm/aiter](https://github.com/ROCm/aiter) | [#7817 \[Triton/Gluon\] unified_attention: run causal=False on the gfx950 Gluon kernel](https://github.com/ROCm/aiter/pull/7817) | 🟢 Open | 2026-11-11 | — | +351 / -3 | Triton/Gluon | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#331 perf(amd): gfx1100 backends for emb LoRA-A, qkv LoRA-B, and get_target_cache_loc](https://github.com/flagos-ai/FlagGems-sglang/pull/331) | 🟣 Merged | 2026-11-09 | 2026-11-10 | +1,260 / -0 | — | — | — |
