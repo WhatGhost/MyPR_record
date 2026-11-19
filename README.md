@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 84 | 61 | 15 | 8 | 1 | 26 | 88.4% | 72.6% |
+| 87 | 63 | 15 | 9 | 1 | 27 | 87.5% | 72.4% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +226,534 | -1,110 | 986 |
+| +227,669 | -1,150 | 993 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 59 | 40 | 15 | 4 | 18 |
+| 2026 | 62 | 42 | 15 | 5 | 19 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,7 +29,7 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 12 | 12 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 14 | 14 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -51,6 +51,7 @@
 | [flagos-ai/sglang-plugin-FL](https://github.com/flagos-ai/sglang-plugin-FL) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
@@ -62,6 +63,9 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#394 perf(amd): add gfx1100 fused_moe](https://github.com/flagos-ai/FlagGems-sglang/pull/394) | 🟣 Merged | 2026-11-18 | 2026-11-18 | +660 / -0 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#393 fix(amd): handle strided q in gfx1100 decode attention; tune gfx1100 GDN packed decode](https://github.com/flagos-ai/FlagGems-sglang/pull/393) | 🟣 Merged | 2026-11-18 | 2026-11-18 | +350 / -26 | — | — | — |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3579 perf(spec): project all sampled DSpark draft positions through the head in one pass](https://github.com/lightseekorg/tokenspeed/pull/3579) | 🔴 Closed | 2026-11-18 | — | +125 / -14 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#391 perf(amd): speed up gfx1100 fused_softmax_pool, per_group_transpose, ltx2_split_rotary, dsv3_fused_a_gemm, embedding_lora_a and apply_token_bitmask](https://github.com/flagos-ai/FlagGems-sglang/pull/391) | 🟣 Merged | 2026-11-17 | 2026-11-17 | +1,004 / -4 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#390 perf(amd): speed up gfx1100 chunked_sgmv_shrink and recompute_w_u](https://github.com/flagos-ai/FlagGems-sglang/pull/390) | 🟣 Merged | 2026-11-16 | 2026-11-17 | +797 / -2 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#371 perf(amd): speed up gfx1100 silu_and_mul, fused_moe_gemm, tiny_n_gemm and extend_attention](https://github.com/flagos-ai/FlagGems-sglang/pull/371) | 🟣 Merged | 2026-11-13 | 2026-11-17 | +148 / -47 | — | — | — |
