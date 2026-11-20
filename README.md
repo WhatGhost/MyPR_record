@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 87 | 63 | 15 | 9 | 1 | 27 | 87.5% | 72.4% |
+| 88 | 63 | 16 | 9 | 1 | 27 | 87.5% | 71.6% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +227,669 | -1,150 | 993 |
+| +227,905 | -1,160 | 1,005 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 62 | 42 | 15 | 5 | 19 |
+| 2026 | 63 | 42 | 16 | 5 | 19 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -44,6 +44,7 @@
 | [ROCm/aiter](https://github.com/ROCm/aiter) | 3 | 1 | 2 | 0 | 0 | 100.0% | 33.3% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 2 | 0 | 1 | 1 | 0 | 0.0% | 0.0% |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -51,7 +52,6 @@
 | [flagos-ai/sglang-plugin-FL](https://github.com/flagos-ai/sglang-plugin-FL) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
 | [handy-computer/transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/llamafactory-blog](https://github.com/hiyouga/llamafactory-blog) | 1 | 1 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | 1 | 0 | 0 | 1 | 0 | 0.0% | 0.0% |
 | [Tencent/hpc-ops](https://github.com/Tencent/hpc-ops) | 1 | 0 | 1 | 0 | 0 | — | 0.0% |
@@ -63,6 +63,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3619 fix(spec): walk DFlash2 drafts greedily while the batch's verify does not read the recorded q](https://github.com/lightseekorg/tokenspeed/pull/3619) | 🟢 Open | 2026-11-19 | — | +236 / -10 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#394 perf(amd): add gfx1100 fused_moe](https://github.com/flagos-ai/FlagGems-sglang/pull/394) | 🟣 Merged | 2026-11-18 | 2026-11-18 | +660 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#393 fix(amd): handle strided q in gfx1100 decode attention; tune gfx1100 GDN packed decode](https://github.com/flagos-ai/FlagGems-sglang/pull/393) | 🟣 Merged | 2026-11-18 | 2026-11-18 | +350 / -26 | — | — | — |
 | [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3579 perf(spec): project all sampled DSpark draft positions through the head in one pass](https://github.com/lightseekorg/tokenspeed/pull/3579) | 🔴 Closed | 2026-11-18 | — | +125 / -14 | — | — | — |
