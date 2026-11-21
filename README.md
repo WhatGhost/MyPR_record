@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 88 | 63 | 16 | 9 | 1 | 27 | 87.5% | 71.6% |
+| 92 | 65 | 18 | 9 | 1 | 27 | 87.8% | 70.7% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +227,905 | -1,160 | 1,005 |
+| +231,101 | -1,195 | 1,015 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 63 | 42 | 16 | 5 | 19 |
+| 2026 | 67 | 44 | 18 | 5 | 19 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,22 +29,22 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 14 | 14 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 16 | 16 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 5 | 0 | 4 | 1 | 0 | 0.0% | 0.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | 4 | 1 | 3 | 0 | 0 | 100.0% | 25.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 3 | 0 | 2 | 1 | 0 | 0.0% | 0.0% |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [ROCm/aiter](https://github.com/ROCm/aiter) | 3 | 1 | 2 | 0 | 0 | 100.0% | 33.3% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 2 | 0 | 1 | 1 | 0 | 0.0% | 0.0% |
 | [ModelTC/LightLLM](https://github.com/ModelTC/LightLLM) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [PaddlePaddle/Paddle](https://github.com/PaddlePaddle/Paddle) | 2 | 1 | 0 | 1 | 0 | 50.0% | 50.0% |
 | [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -63,7 +63,11 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3619 fix(spec): walk DFlash2 drafts greedily while the batch's verify does not read the recorded q](https://github.com/lightseekorg/tokenspeed/pull/3619) | 🟢 Open | 2026-11-19 | — | +236 / -10 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#416 perf(amd): add gfx1100 awq_gemm and mla_kv_pack_quantize_fp8](https://github.com/flagos-ai/FlagGems-sglang/pull/416) | 🟣 Merged | 2026-11-20 | 2026-11-20 | +769 / -0 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#415 perf(amd): add gfx1100 triton_scaled_mm and w8a8_block_fp8_matmul](https://github.com/flagos-ai/FlagGems-sglang/pull/415) | 🟣 Merged | 2026-11-20 | 2026-11-20 | +1,921 / -0 | — | — | — |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3655 fix(sampling): count a chain's earlier draft tokens in triton_full verify penalties](https://github.com/lightseekorg/tokenspeed/pull/3655) | 🟢 Open | 2026-11-20 | — | +238 / -28 | — | — | — |
+| [ROCm/aiter](https://github.com/ROCm/aiter) | [#8335 \[Config\] Add tuned gfx950 BF16 GEMM configs for Qwen3-14B decode](https://github.com/ROCm/aiter/pull/8335) | 🟢 Open | 2026-11-20 | — | +244 / -0 | Config | — | — |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3619 fix(spec): walk DFlash2 drafts greedily while the batch's verify does not read the recorded q](https://github.com/lightseekorg/tokenspeed/pull/3619) | 🟢 Open | 2026-11-19 | — | +260 / -17 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#394 perf(amd): add gfx1100 fused_moe](https://github.com/flagos-ai/FlagGems-sglang/pull/394) | 🟣 Merged | 2026-11-18 | 2026-11-18 | +660 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#393 fix(amd): handle strided q in gfx1100 decode attention; tune gfx1100 GDN packed decode](https://github.com/flagos-ai/FlagGems-sglang/pull/393) | 🟣 Merged | 2026-11-18 | 2026-11-18 | +350 / -26 | — | — | — |
 | [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3579 perf(spec): project all sampled DSpark draft positions through the head in one pass](https://github.com/lightseekorg/tokenspeed/pull/3579) | 🔴 Closed | 2026-11-18 | — | +125 / -14 | — | — | — |
