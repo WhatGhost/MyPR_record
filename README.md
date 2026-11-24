@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 92 | 65 | 18 | 9 | 1 | 27 | 87.8% | 70.7% |
+| 93 | 65 | 19 | 9 | 1 | 27 | 87.8% | 69.9% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +231,101 | -1,195 | 1,015 |
+| +233,384 | -1,195 | 1,021 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 67 | 44 | 18 | 5 | 19 |
+| 2026 | 68 | 44 | 19 | 5 | 19 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,7 +29,7 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 16 | 16 | 0 | 0 | 0 | 100.0% | 100.0% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 17 | 16 | 1 | 0 | 0 | 100.0% | 94.1% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -63,6 +63,7 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#421 perf(amd): add gfx1100 QSA, PLE and HC ops](https://github.com/flagos-ai/FlagGems-sglang/pull/421) | 🟢 Open | 2026-11-23 | — | +2,283 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#416 perf(amd): add gfx1100 awq_gemm and mla_kv_pack_quantize_fp8](https://github.com/flagos-ai/FlagGems-sglang/pull/416) | 🟣 Merged | 2026-11-20 | 2026-11-20 | +769 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#415 perf(amd): add gfx1100 triton_scaled_mm and w8a8_block_fp8_matmul](https://github.com/flagos-ai/FlagGems-sglang/pull/415) | 🟣 Merged | 2026-11-20 | 2026-11-20 | +1,921 / -0 | — | — | — |
 | [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3655 fix(sampling): count a chain's earlier draft tokens in triton_full verify penalties](https://github.com/lightseekorg/tokenspeed/pull/3655) | 🟢 Open | 2026-11-20 | — | +238 / -28 | — | — | — |
