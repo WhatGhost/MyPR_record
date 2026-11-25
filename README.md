@@ -8,17 +8,17 @@
 
 | PR 总数 | 已合并 | Open | 未合并关闭 | Draft | 贡献仓库 | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 93 | 65 | 19 | 9 | 1 | 27 | 87.8% | 69.9% |
+| 94 | 66 | 19 | 9 | 1 | 27 | 88.0% | 70.2% |
 
 | 新增代码 | 删除代码 | 变更文件 |
 | ---: | ---: | ---: |
-| +233,384 | -1,195 | 1,021 |
+| +233,801 | -1,248 | 1,025 |
 
 ## 年度统计
 
 | 年份 | PR | 已合并 | Open | 未合并关闭 | 贡献仓库 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 2026 | 68 | 44 | 19 | 5 | 19 |
+| 2026 | 69 | 45 | 19 | 5 | 19 |
 | 2025 | 3 | 1 | 0 | 2 | 2 |
 | 2024 | 2 | 2 | 0 | 0 | 1 |
 | 2023 | 9 | 9 | 0 | 0 | 2 |
@@ -29,19 +29,19 @@
 
 | 仓库 | PR | 已合并 | Open | 未合并关闭 | Draft | 已结束 PR 合并率 | 总体合并率（含 Open） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 17 | 16 | 1 | 0 | 0 | 100.0% | 94.1% |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | 17 | 17 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [flagos-ai/FlagGems](https://github.com/flagos-ai/FlagGems) | 7 | 3 | 4 | 0 | 0 | 100.0% | 42.9% |
 | [PaddlePaddle/CINN](https://github.com/PaddlePaddle/CINN) | 7 | 7 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | 6 | 6 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 5 | 0 | 4 | 1 | 0 | 0.0% | 0.0% |
 | [ByteDance-Seed/Triton-distributed](https://github.com/ByteDance-Seed/Triton-distributed) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
 | [EnterpriseOrganization/enterprise](https://github.com/EnterpriseOrganization/enterprise) | 4 | 3 | 0 | 1 | 0 | 75.0% | 75.0% |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 4 | 0 | 3 | 1 | 0 | 0.0% | 0.0% |
 | [ROCm/aiter](https://github.com/ROCm/aiter) | 4 | 1 | 3 | 0 | 0 | 100.0% | 25.0% |
 | [zhaoyonghe/littleprince](https://github.com/zhaoyonghe/littleprince) | 4 | 4 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [AMD-AGI/Hyperloom](https://github.com/AMD-AGI/Hyperloom) | 3 | 2 | 0 | 1 | 0 | 66.7% | 66.7% |
 | [apache/tvm](https://github.com/apache/tvm) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
-| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | 3 | 0 | 2 | 1 | 0 | 0.0% | 0.0% |
 | [ModelTC/LightX2V](https://github.com/ModelTC/LightX2V) | 3 | 3 | 0 | 0 | 0 | 100.0% | 100.0% |
 | [vllm-project/vllm-gguf-plugin](https://github.com/vllm-project/vllm-gguf-plugin) | 3 | 0 | 3 | 0 | 1 | — | 0.0% |
 | [flagos-ai/FlagTree](https://github.com/flagos-ai/FlagTree) | 2 | 2 | 0 | 0 | 0 | 100.0% | 100.0% |
@@ -63,7 +63,8 @@
 
 | 仓库 | Pull Request | 状态 | 创建日期 | 合并日期 | 代码变更 | 标签 | 分类 | 备注 |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#421 perf(amd): add gfx1100 QSA, PLE and HC ops](https://github.com/flagos-ai/FlagGems-sglang/pull/421) | 🟢 Open | 2026-11-23 | — | +2,283 / -0 | — | — | — |
+| [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3767 fix(sampling): verify each request of a mixed-filter batch against the DFlash2 draft q by its own filter kind](https://github.com/lightseekorg/tokenspeed/pull/3767) | 🟢 Open | 2026-11-24 | — | +417 / -53 | — | — | — |
+| [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#421 perf(amd): add gfx1100 QSA, PLE and HC ops](https://github.com/flagos-ai/FlagGems-sglang/pull/421) | 🟣 Merged | 2026-11-23 | 2026-11-24 | +2,283 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#416 perf(amd): add gfx1100 awq_gemm and mla_kv_pack_quantize_fp8](https://github.com/flagos-ai/FlagGems-sglang/pull/416) | 🟣 Merged | 2026-11-20 | 2026-11-20 | +769 / -0 | — | — | — |
 | [flagos-ai/FlagGems-sglang](https://github.com/flagos-ai/FlagGems-sglang) | [#415 perf(amd): add gfx1100 triton_scaled_mm and w8a8_block_fp8_matmul](https://github.com/flagos-ai/FlagGems-sglang/pull/415) | 🟣 Merged | 2026-11-20 | 2026-11-20 | +1,921 / -0 | — | — | — |
 | [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed) | [#3655 fix(sampling): count a chain's earlier draft tokens in triton_full verify penalties](https://github.com/lightseekorg/tokenspeed/pull/3655) | 🟢 Open | 2026-11-20 | — | +238 / -28 | — | — | — |
